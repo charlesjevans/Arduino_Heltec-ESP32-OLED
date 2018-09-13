@@ -1,9 +1,9 @@
 Hello World!
-This repository contains code examples for an Arduino compatible microcontroller called ESP32. The full product name is:
+This is a collection of Arduino example sketches for the Heltec ESP32 LoRa SX1278 0.96 Inch Blue OLED Display Bluetooth WIFI Lora Kit 32 Module IOT Development Board 433MHz for Arduino
 
-Heltec ESP32 LoRa SX1278 0.96 Inch Blue OLED Display Bluetooth WIFI Lora Kit 32 Module IOT Development Board 433MHz for Arduino
+This version of the ESP32 has built in wireless and display so it makes a great all-purpose board for wireless gadgets. It can be programed using the Arduino IDE once you import the correct driver for the board. This can be done using the Arduino's built-in "Board Manager". 
 
-This version of the ESP32 has built in wireless hardware and display so it makes a great all-purpose board for wireless gadgets. It can be programed using the Arduino IDE once you import a new driver for the board using the built-in "Board Manager". Instructions:
+Instructions:
 
 1) In the Arduino IDE go to:
 File > Preferences > Additional Boards Manager URL
