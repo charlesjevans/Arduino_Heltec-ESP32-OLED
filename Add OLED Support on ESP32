@@ -1,0 +1,32 @@
+Arduino IDE:
+Sketch > Include Library > Manage Libraries
+Search for and install: u8g2
+Select and install U8g2 by Oliver (https://github.com/olikraus/u8g2)
+
+Select the ESP32 board in the Arduino IDE:
+Tools > Board > ESP32 Dev Module
+
+Select the serial (usb) port connected to the ESP32:
+Tools > Port > Serial Ports: COM?
+
+Upload the Hellow World test sketch:
+Source: https://github.com/olikraus/u8g2
+===========================================
+
+#include <Arduino.h>
+#include <U8g2lib.h>
+
+//Load the driver for the ESP32 0.96" 128x64 Monochrome OLED Display:
+U8G2_SSD1306_128X64_NONAME_F_SW_I2C u8g2(U8G2_R0, /* clock=*/ 15, /* data=*/ 4, /* reset=*/ 16);
+
+void setup(void) {
+  u8g2.begin();
+}
+
+void loop(void) {
+  u8g2.clearBuffer();
+  u8g2.setFont(u8g2_font_helvR12_tr);
+  u8g2.drawStr(15,40,"Hello World!");	//add content to buffer
+  u8g2.sendBuffer();				        	//send buffer to display
+  delay(1000);  
+}
