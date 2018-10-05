@@ -1,0 +1,13 @@
+1) Arduino IDE: File > Preferences > Additional Boards Manager URL
+
+2) Add the URL of the ESP32 manufacturers driver to the URL field. 
+   https://dl.espressif.com/dl/package_esp32_index.json
+
+3) Go to: Tools > Board > Boards Manager
+
+4) In the search field enter: "esp32"
+   Look for and click on "esp32 Espressif Systems driver". 
+   Click the install button.
+
+5) Go to: File > Examples
+   Load one of the ESP32 sketches to get started. 
